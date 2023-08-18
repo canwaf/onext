@@ -1,0 +1,94 @@
+{
+    "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "ons": "http://data.ons.gov.uk/ns#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "Dataset": {
+            "@type": "dcat:Dataset"
+        },
+        "title": "dcterms:title",
+        "summary": "dcterms:abstract",
+        "description": "dcterms:description",
+        "publisher": {
+            "@id": "dcterms:publisher",
+            "@type": "@id",
+            "@context": {
+                "@base": "https://www.gov.uk/government/organisations/"
+            }
+        },
+        "published": {
+            "@id": "dcterms:issued",
+            "@type": "xsd:dateTime"
+        },
+        "creator": {
+            "@id": "dcterms:creator",
+            "@type": "@id",
+            "@context": {
+                "@base": "https://www.gov.uk/government/organisations/"
+            }
+        },
+        "contact_point": {
+            "@id": "dcat:contactPoint",
+            "@type": "@id",
+            "@context": {
+                "name": "vcard:fn",
+                "email": "vcard:hasEmail"
+            }
+        },
+        "license": "dcterms:license",
+        "keywords": "dcat:keyword",
+        "themes": {
+            "@id": "dcat:theme",
+            "@type": "@id",
+            "@context": {
+                "@base": "https://data.ons.gov.uk/theme/"
+            }
+        },
+        "frequency": {
+            "@id": "dcterms:accrualPeriodicity",
+            "@type": "@id",
+            "@context": {
+                "@base": "http://purl.org/cld/freq/"
+            }
+        },
+        "spatial_coverage": {
+            "@id": "dcterms:spatial",
+            "@type": "@id",
+            "@context": {
+                "@base": "http://statistics.data.gov.uk/id/statistical-geography/"
+            }
+        },
+        "temporal_coverage": {
+            "@id": "dcterms:temporal",
+            "@type": "xsd:dateTime"
+        },
+        "next_release": {
+            "@id": ""
+        }
+    },
+    "@language": "en",
+    "@id": "ons:average-travel-time",
+    "Dataset": {
+        "title": "Travel time to employment centres by mode of travel",
+        "summary": "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics), England, 2014-2019.",
+        "description": "This dataset shows the average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics), in England, for periods 2014-2019. \n\n### Coverage \n\nEngland\n\n### Geography definition\n\nLocal Authority Districts and Unitary Authorities,\nMetropolitan Counties,\nCounties,\nRegions,\nNation (England)\n\n### Source\n\n - England: [Department for Transport](https://www.gov.uk/government/statistical-data-sets/journey-time-statistics-data-tables-jts) \n\n\n### Source Notes and Caveats \nData is not available for 2018. \n\n\n",
+        "creator": "department-for-transport",
+        "publisher": "office-for-national-statistics",
+        "submitted": "2023-06-31",
+        "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "keywords": [
+            "transport",
+            "travel-to-work",
+            "journey-time",
+            "subnational",
+            "local-authority"
+        ],
+        "themes": "peopleinwork",
+        "frequency": "quarterly",
+        "spatial_coverage": "E09000001",
+        "next_release": "2023-10-15"
+    }
+}
