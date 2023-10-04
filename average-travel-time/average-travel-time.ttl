@@ -4,12 +4,14 @@
 @prefix ns2: <http://www.w3.org/1999/xhtml/vocab#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ons.gov.uk/datasets/travel-time-to-employment-centres-by-mode-of-travel> dcterms:abstract "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics)."@en ;
+<https://ons.gov.uk/datasets/travel-time-to-employment-centres-by-mode-of-travel> a ns1:Distribution ;
+    dcterms:abstract "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics)."@en ;
     dcterms:creator <https://www.gov.uk/government/organisations/department-for-transport> ;
     dcterms:description "This dataset shows the average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics)."^^<https://www.iana.org/assignments/media-types/text/markdown> ;
     dcterms:publisher <https://www.gov.uk/government/organisations/office-for-national-statistics> ;
     dcterms:spatial <http://statistics.data.gov.uk/id/statistical-geography/E92000001> ;
-    dcterms:temporal [ dcat:endDate "2019-12-31"^^xsd:dateTime ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+            dcat:endDate "2019-12-31"^^xsd:dateTime ;
             dcat:startDate "2014-01-01"^^xsd:dateTime ] ;
     dcterms:title "Travel time to employment centres by mode of travel"@en ;
     ns2:license "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"@en ;
