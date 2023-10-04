@@ -1,0 +1,33 @@
+{
+    "@context": "../src/context/ons_context_v0.1.jsonld",
+    "@id": "https://ons.gov.uk/datasets/travel-time-to-employment-centres-by-mode-of-travel",
+    "title": "Travel time to employment centres by mode of travel",
+    "creator": "department-for-transport",
+    "summary": "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics).",
+    "description": "This dataset shows the average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics).",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "landing_page": "https://www.gov.uk/government/statistical-data-sets/journey-time-statistics-data-tables-jts",
+    "keywords": [
+        "transport",
+        "travel-to-work",
+        "journey-time",
+        "subnational",
+        "local-authority"
+    ],
+    "publisher": "office-for-national-statistics",
+    "dataset_issued": "2023-08-18T09:10:26.937229",
+    "dataset_modified": "2023-08-18T09:10:26.937229",
+    "themes": [
+        "people-in-work",
+        "transport"
+    ],
+    "spatial_resolution": ["E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E92"],
+    "spatial_coverage": "E92000001",
+    "temporal_resolution": "P1Y",
+    "temporal_coverage": {
+        "start": "2014-01-01",
+        "end": "2019-12-31"
+    },
+    "note": "Data is not available for 2018."
+
+}

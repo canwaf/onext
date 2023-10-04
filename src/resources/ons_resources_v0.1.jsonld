@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "@language": "en",
+    "@import": "http://www.w3.org/2013/json-ld-context/rdfa11"
+  },
+  "@id": "https://ons.gov.uk/onext/resources",
+  "@base": "https://ons.gov.uk/onext/resources#"
+}

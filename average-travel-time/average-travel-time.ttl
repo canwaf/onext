@@ -1,0 +1,33 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <ons:> .
+@prefix ns2: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ons.gov.uk/datasets/travel-time-to-employment-centres-by-mode-of-travel> dcterms:abstract "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics)."@en ;
+    dcterms:creator <https://www.gov.uk/government/organisations/department-for-transport> ;
+    dcterms:description "This dataset shows the average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by public transport or walking, by cycle and by car (experimental statistics)."^^<https://www.iana.org/assignments/media-types/text/markdown> ;
+    dcterms:publisher <https://www.gov.uk/government/organisations/office-for-national-statistics> ;
+    dcterms:spatial <http://statistics.data.gov.uk/id/statistical-geography/E92000001> ;
+    dcterms:temporal [ dcat:endDate "2019-12-31"^^xsd:dateTime ;
+            dcat:startDate "2014-01-01"^^xsd:dateTime ] ;
+    dcterms:title "Travel time to employment centres by mode of travel"@en ;
+    ns2:license "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"@en ;
+    dcat:keyword "journey-time"@en,
+        "local-authority"@en,
+        "subnational"@en,
+        "transport"@en,
+        "travel-to-work"@en ;
+    dcat:landingPage <https://www.gov.uk/government/statistical-data-sets/journey-time-statistics-data-tables-jts> ;
+    ns1:note "Data is not available for 2018." ;
+    ns1:spatialResolution <http://statistics.data.gov.uk/id/statistical-entity/E06>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E07>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E08>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E09>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E10>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E11>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E12>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E13>,
+        <http://statistics.data.gov.uk/id/statistical-entity/E92> ;
+    ns1:temporalResolutions "P1Y"@en .
+

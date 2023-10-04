@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "draft_ons_schema.json",
+    "title": "ONS Schema",
+    "@id": {
+        "type": "string",
+        "format": "uri",
+        "description": "The unique identifier for the dataset"
+    },
+    "required": ["@id"]
+}
